@@ -6,15 +6,15 @@ import predict
 
 def show_form():
     st.write('Fill out details below')
-    percent_OS = st.number_input("percentage in OS",min_value=60,max_value=100)
-    percent_Alg = st.number_input("percentage in Algorithms",min_value=60,max_value=100)
-    percent_Programming = st.number_input("percentage in Programming Concepts",min_value=60,max_value=100)
-    percent_SE = st.number_input("percentage in Software Engineering",min_value=60,max_value=100)
-    percent_CN = st.number_input("percentage in Computer Networks",min_value=60,max_value=100)
-    percent_EC = st.number_input("percentage in Electronics",min_value=60,max_value=100)
-    percent_COA = st.number_input("percentage in Computer Architecture",min_value=60,max_value=100)
-    percent_Maths = st.number_input("percentage in Mathematics",min_value=60,max_value=100)
-    percent_Communication = st.number_input("percentage in Communication Skills",min_value=60,max_value=100)
+    percent_OS = st.number_input("percentage in OS",max_value=100)
+    percent_Alg = st.number_input("percentage in Algorithms",max_value=100)
+    percent_Programming = st.number_input("percentage in Programming Concepts",max_value=100)
+    percent_SE = st.number_input("percentage in Software Engineering",max_value=100)
+    percent_CN = st.number_input("percentage in Computer Networks",max_value=100)
+    percent_EC = st.number_input("percentage in Electronics",max_value=100)
+    percent_COA = st.number_input("percentage in Computer Architecture",max_value=100)
+    percent_Maths = st.number_input("percentage in Mathematics",max_value=100)
+    percent_Communication = st.number_input("percentage in Communication Skills",max_value=100)
 
     hours_working = st.slider("Hours Working per day",min_value=4,max_value=12)
 
