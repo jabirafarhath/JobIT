@@ -1,7 +1,6 @@
 from matplotlib.style import reload_library
 import pandas as pd
 import pickle
-from form import show_form
 import streamlit as st
 
 def load_model():
