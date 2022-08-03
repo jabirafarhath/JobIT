@@ -1,22 +1,13 @@
 import streamlit as st
-import time
+import timer
+
 
 score=0
 ok=False
+
 st.set_page_config()
 
-def show_timer(score):
-    
-    N = 1*60
-    ph=st.empty()
-    for secs in range(N,-1,-1):
-        mm = secs//60
-        ss = secs%60
-        ph.metric("Countdown", f"{mm:02d}:{ss:02d}")
-        time.sleep(1)
-        if mm==0 and ss==0:
-            st.subheader("your score is: ",)
-            st.subheader(score)
+
 
 def show_apti_test():
     score=0
@@ -53,9 +44,10 @@ def show_apti_test():
 
     ok = st.button("Submit")
     if ok:
-        st.subheader("your score is: ",)
+        st.subheader("Aptitude Test score : ",)
         st.subheader(score)
-    show_timer(score)
+    return score
+
     
 
     
@@ -71,5 +63,7 @@ def show_apti_test():
 st.title("Aptitude Test")
 st.subheader("Try to answer the questions below and press submit only when you finish answering all questions. A timer is provided at the end. Time limit is 8 mins. When the timer expires your score will displayed or once you submit you can view your score.")
 show_apti_test()
+
+
 
 

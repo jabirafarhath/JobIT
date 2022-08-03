@@ -21,21 +21,21 @@ def show_form():
 
     logical_qoutient = st.slider("Aptitude Test Score",min_value=1,max_value=10,)
 
-    hackathons = st.radio("Have you ever participated in Hackathons?",{'Yes','No'})
+    hackathons = st.radio("Have you ever participated in Hackathons?",{'','Yes','No'})
     hackathons = 1 if hackathons=="Yes" else 0
 
     coding_skills_rating = st.slider("Coding Test Score",min_value=1,max_value=10)
 
     public_speaking_rating = st.slider("Verbal Test Score",min_value=1,max_value=10,)
 
-    long_hour_before_system = st.radio("Can you work for long hours before the system?",{'Yes','No'})
+    long_hour_before_system = st.radio("Can you work for long hours before the system?",{'','Yes','No'})
     long_hour_before_system = 1 if long_hour_before_system=="Yes" else 0
 
 
-    self_learning_capability = st.radio("Do you have self learning Capability?",{'Yes','No'})
+    self_learning_capability = st.radio("Do you have self learning Capability?",{'','Yes','No'})
     self_learning_capability = 1 if self_learning_capability=="Yes" else 0
 
-    extra_courses_did = st.radio("Have you done any extra courses?",{'Yes','No'})
+    extra_courses_did = st.radio("Have you done any extra courses?",{'','Yes','No'})
     extra_courses_did = 1 if extra_courses_did=="Yes" else 0
 
     certificate = st.selectbox("Certifications",map.certifications)
@@ -44,10 +44,10 @@ def show_form():
     workshops_done = st.selectbox("Workshops attended",map.workshops)
     workshops_done = map.workshops[map.workshops['workshops']==workshops_done]['workshops_n'].values[0]
 
-    talent_test_taken = st.radio("Have you taken any talent tests?",{'Yes','No'})
+    talent_test_taken = st.radio("Have you taken any talent tests?",{'','Yes','No'})
     talent_test_taken = 1 if talent_test_taken=="Yes" else 0
     
-    olympiads = st.radio("Have you attended any olympiads?",{'Yes','No'})
+    olympiads = st.radio("Have you attended any olympiads?",{'','Yes','No'})
     olympiads = 1 if olympiads=="Yes" else 0
 
     read_write_skills = st.selectbox("How do you define your reading and writing skills?",map.read_write)
@@ -62,42 +62,42 @@ def show_form():
     interested_career_area = st.selectbox("Interested Career Field",map.interested_career)
     interested_career_area = map.interested_career[map.interested_career['career']==interested_career_area]['career_n'].values[0]
 
-    job_or_higher = st.radio("Would you rather select job or higher studies, if given a chance?",{"Job","Higher Studies"})
+    job_or_higher = st.radio("Would you rather select job or higher studies, if given a chance?",{'',"Job","Higher Studies"})
     job_or_higher = 1 if job_or_higher=="Job" else 0
 
     type_of_company = st.selectbox("Which type of company you want to settle in?",map.company)
     type_of_company = map.company[map.company['company']==type_of_company]['company_n'].values[0]
 
-    inputs_from_senior = st.radio("Have you ever taken any advice or other help from Seniors or Elders?",{"Yes","No"})
+    inputs_from_senior = st.radio("Have you ever taken any advice or other help from Seniors or Elders?",{'',"Yes","No"})
     inputs_from_senior = 1 if inputs_from_senior=="Yes" else 0
 
-    games = st.radio("Are you interested in games?",{"Yes","No"})
+    games = st.radio("Are you interested in games?",{'',"Yes","No"})
     games = 1 if games=="Yes" else 0
 
     interested_books= st.selectbox("Interest type of books",map.books)
     interested_books = map.books[map.books['books']==interested_books]['books_n'].values[0]
 
-    relationship = st.radio("Are you in a relationship?",{"Yes","No"})
+    relationship = st.radio("Are you in a relationship?",{'',"Yes","No"})
     relationship = 1 if relationship=="Yes" else 0
 
-    teams = st.radio("Have you ever worked in teams?",{"Yes","No"})
+    teams = st.radio("Have you ever worked in teams?",{'',"Yes","No"})
     teams = 1 if teams=="yes" else 0
 
     st.write("How do you define yourself?")
 
-    gentle_stubborn = st.radio("Gentle or Stubborn",{"Gentle","Stubborn"})
+    gentle_stubborn = st.radio("Gentle or Stubborn",{'',"Gentle","Stubborn"})
     gentle_stubborn = 1 if gentle_stubborn=="Stubborn" else 0
 
-    intro_extro = st.radio("Introvert or Extrovert",{"Introvert","Extrovert"})
+    intro_extro = st.radio("Introvert or Extrovert",{'',"Introvert","Extrovert"})
     intro_extro = 1 if intro_extro=="Introvert" else 0
 
-    management_technical = st.radio("Management or Technical",{"Management","Technical"})
+    management_technical = st.radio("Management or Technical",{'',"Management","Technical"})
     management_technical = 1 if management_technical=="Technical" else 0
 
-    salary_work = st.radio("Slary or Work",{"Salary","Work"})
+    salary_work = st.radio("Slary or Work",{'',"Salary","Work"})
     salary_work = 1 if salary_work=="Work" else 0
 
-    hard_smart = st.radio("Hard or Smart",{"Hard Worker","Smart Worker"})
+    hard_smart = st.radio("Hard or Smart",{'',"Hard Worker","Smart Worker"})
     hard_smart = 1 if hard_smart == "Smart" else 0
 
     
