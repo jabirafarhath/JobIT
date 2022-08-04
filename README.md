@@ -8,7 +8,7 @@
 git clone https://github.com/jabirafarhath/JobIT.git
 
 ```
-###### 2) On windows, install python modules using `pip` command on you terminal.
+###### 2) On windows, install python modules using `pip` command.
 
 ```
 pip install streamlit
