@@ -1,11 +1,12 @@
-# Getting Started with Streamlit App
+# JobIT
+JobIT is a web app built using python and Streamlit which predicts the suitable job in IT field on entering user details. This web app make use of Logistic Regression in Machine Learning to make the prediction. 
+
+## Getting Started with Streamlit App
 
 ###### On windows, install python modules using `pip` command on you terminal.
 
 ```
 pip install streamlit
-pip install pandas
-pip install numpy
 
 ```
 ###### Create an `app.py` file in the project folder.
