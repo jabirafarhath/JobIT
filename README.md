@@ -19,5 +19,8 @@ pip install matplotlib
 
 ```
 ###### 3) Run the `JobIT.ipynb` file. 
-###### 4) Run `streamlit run Hello.py` on terminal.
+###### 4) Run on terminal.
+```
+streamlit run Hello.py
+```
 ###### Now the app will run on your localhost, on 8501 port.
