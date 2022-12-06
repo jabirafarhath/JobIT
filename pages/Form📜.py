@@ -1,5 +1,6 @@
 import numpy as np
 import streamlit as st
+
 import mapping as map
 import predict as predict
 
@@ -38,7 +39,7 @@ def show_form():
         "Coding Test Score", min_value=1, max_value=10)
 
     public_speaking_rating = st.slider(
-        "Verbal Test Score", min_value=1, max_value=10,)
+        "Verbal Test Score", min_value=1, max_value=10)
 
     long_hour_before_system = st.radio(
         "Can you work for long hours before the system?", {'', 'Yes', 'No'})
@@ -144,6 +145,5 @@ ok = st.button("Predict Job")
 if ok:
     result = predict.predict(input)
     result = result[0]
-    print(result)
     result = map.job_role[map.job_role['job_n'] == result]['job'].values[0]
     st.subheader(result)

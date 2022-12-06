@@ -53,7 +53,7 @@ def show_apti_test():
     if ok:
         st.subheader("Aptitude Test score : ",)
         st.subheader(score)
-    return score
+    
 
     # st.write(score)
 
